@@ -84,16 +84,16 @@ function AutoScaledGltf({ src, targetSize = 1.2, ...props }) {
 export const App = () => (
   <Canvas flat camera={{ fov: 75, position: [0, 0, 20] }} eventSource={document.getElementById('root')} eventPrefix="client">
     <color attach="background" args={['#f0f0f0']} />
-    <Frame id="01" name={`pick\nles`} author="Omar Faruq Tawsif" bg="#e4cdac" position={[-1.15, 0, 0]} rotation={[0, 0.5, 0]}>
+    <Frame id="01" name={`铜豆\n镂空`} author="博物馆" bg="#e4cdac" position={[-1.15, 0, 0]} rotation={[0, 0.5, 0]}>
       {/* <Gltf src="wenbo1.glb" scale={8} position={[0, -0.7, -2]} />
     </Frame> */}
       <AutoScaledGltf src="wenbo1.glb" targetSize={1.2} position={[0, -0.7, -2]} />
     </Frame>
-    <Frame id="02" name="tea" author="Omar Faruq Tawsif">
+    <Frame id="02" name="龙形佩青玉" author="博物馆" bg="#ace4c8ff" position={[0, 0, 0]}>
       {/* <Gltf src="wenbo2.glb" position={[0, -2, -3]} /> */}
       <AutoScaledGltf src="wenbo2.glb" targetSize={1.2} position={[0, 0, -2.5]} />
     </Frame>
-    <Frame id="03" name="still" author="Omar Faruq Tawsif" bg="#d1d1ca" position={[1.15, 0, 0]} rotation={[0, -0.5, 0]}>
+    <Frame id="03" name={`瓷枕\n白釉黑彩`} author="博物馆" bg="#d1d1ca" position={[1.15, 0, 0]} rotation={[0, -0.5, 0]}>
       {/* <Gltf src="wenbo3.glb" scale={2} position={[0, -0.8, -4]} /> */}
       <AutoScaledGltf src="wenbo3.glb" targetSize={1.2} position={[0, -0.8, -4]} />
     </Frame>
